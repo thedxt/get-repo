@@ -1,0 +1,8 @@
+services:
+  app:
+    image: thedxt/get-repo
+    container_name: get-repo
+    ports:
+    - '8080:80'
+    volumes:
+    - ./files:/usr/local/apache2/htdocs
