@@ -1,6 +1,7 @@
 services:
   app:
     image: thedxt/get-repo
+    restart: unless-stopped
     container_name: get-repo
     ports:
     - '8080:80'
